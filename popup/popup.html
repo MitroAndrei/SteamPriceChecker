@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Steam Price Checker</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="popup-header">
+        <img src="../icons/controller-16.svg" width="20" height="20" alt="Controller Icon">
+        <span>Steam Price Checker</span>
+    </div>
+
+    <label for="countrySelect">Select your country for VAT:</label>
+    <select id="countrySelect"></select>
+    <button id="openIGSearch" style="margin-top: 10px; width: 100%;">View on InstantGaming</button>
+
+    <script src="../background/utils.js"></script>
+    <script src="../background/ig-scraper.js"></script>
+    <script src="ig-search-button.js"></script>
+    <script src="country-select.js"></script>
+    <script src="popup.js"></script>
+</body>
+</html>

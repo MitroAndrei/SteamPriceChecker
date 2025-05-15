@@ -1,0 +1,63 @@
+body {
+    font-family: "Segoe UI", "Arial", sans-serif;
+    margin: 12px;
+    padding: 0;
+    width: 260px;
+    background-color: #1b2838;
+    color: #c7d5e0;
+    font-size: 14px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: block;
+    color: #66c0f4;
+}
+
+select {
+    width: 100%;
+    padding: 6px;
+    font-size: 14px;
+    background-color: #2a475e;
+    color: #c7d5e0;
+    border: 1px solid #66c0f4;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 12px;
+    background: linear-gradient(to bottom, #66c0f4, #417a9b);
+    color: #ffffff;
+    border: 1px solid #66c0f4;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #417a9b, #66c0f4);
+}
+
+option {
+    background-color: #1b2838;
+    color: #c7d5e0;
+}
+
+#popup-header {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+    padding: 4px 0;
+    border-bottom: 1px solid #66c0f4;
+}
+
+#popup-header span {
+    margin-left: 8px;
+}

@@ -1,0 +1,55 @@
+{
+  "manifest_version": 2,
+  "name": "Steam Price Checker",
+  "version": "1.0",
+  "description": "Checks for better prices on Instant Gaming.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "steam-price-checker@example.com"
+    }
+  },
+  "icons": {
+    "16": "icons/controller-16.svg",
+    "48": "icons/controller-48.svg"
+  },
+
+  "permissions": [
+    "storage",
+    "https://store.steampowered.com/*",
+    "https://www.instant-gaming.com/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://store.steampowered.com/app/*"
+      ],
+      "js": [
+        "content/ig-price.js",
+        "background/ig-scraper.js",
+        "content/content.js"
+      ],
+      "css": [
+          "content/content.css"
+      ]
+    }
+  ],
+
+  "background": {
+    "scripts": [
+      "background/utils.js",
+      "background/ig-scraper.js",
+      "background/background.js"
+    ]
+  },
+
+
+  "browser_action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Steam Price Checker",
+    "default_icon": {
+      "16": "icons/controller-16.svg",
+      "48": "icons/controller-48.svg"
+    }
+  }
+}
