@@ -16,6 +16,7 @@ add the VAT to the price found on Instant Gaming. Clicking on the price will tak
   - [Content scripts](#content-scripts)
   - [Popup](#popup)
 - [How to run the extension locally](#how-to-run-the-extension-locally)
+- [Examples](#examples)
 
 ## Context
 
